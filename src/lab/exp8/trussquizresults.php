@@ -23,7 +23,7 @@ echo "\n\n\n\n";
 echo "<html>
 <head></head>";
 echo "<body class=\"page_bg\">";
-echo "<br>Total number of correct answers : ".$total."/2";
+echo "<br>Total number of correct answers : ".$total."/3";
 echo '	<h2>Correct Answers</h2>
 <br>
 <b>Q5.</b>
