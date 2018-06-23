@@ -98,11 +98,34 @@
 						<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
+							<form action="quizresults.php" method="post" name="quiz" onsubmit='return window.confirm("You are submitting information to an external page. \nAre you sure?");' target="_blank">
 <h1 class="text-h2-lightblue">Continuous Beams</h1><div class="content" id="experiment-article-section-6-content">
 <p>
-<b>Q1.</b>
+<b>Q1. Continuous beams are used when the span of the beam is </b>
+<input name="Q1" type="radio" value="1">a. Zero<br>
+<input name="Q1" type="radio" value="2">b. Small<br>
+<input name="Q1" type="radio" value="3">c. 1<br>
+<input name="Q1" type="radio" value="4">d. Large<br>
 <br/><br/>
 </p>
+							<p>
+<b>Q2. In Continuous beams deflection under each rigid support will be equal to <b>
+<input name="Q2" type="radio" value="1">a. Zero<br>
+<input name="Q2" type="radio" value="2">b. Small<br>
+<input name="Q2" type="radio" value="3">c. 1<br>
+<input name="Q2" type="radio" value="4">d. Large<br>
+<br/><br/>
+</p>
+									<p>
+<b>Q3. If the end supports are simple supports then to <b>
+<input name="Q3" type="radio" value="1">a. MA=MB=MC=0<br>
+<input name="Q3" type="radio" value="2">b. MA=0<br>
+<input name="Q3" type="radio" value="3">c. MA=MC=0<br>
+<input name="Q3" type="radio" value="4">d. MB=0<br>
+<br/><br/>
+</p>
+	<p> <input target="_blank" type="submit" value="Submit answers for evaluation"/></p>
+	
 <p>
 <a href="Exp-3 Continuous Beams.pdf" target="_blank">Read More</a>
 </p>
