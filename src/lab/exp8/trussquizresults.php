@@ -7,16 +7,16 @@ echo "You answered the following questions correctly : ";
 if ($q5==1)
 {
 $total=$total+1;
-echo "5 ";
+echo "1 ";
 }
 if ($q6==1)
 {
 $total=$total+1;
-echo "6 ";
+echo "2 ";
 }
 if($q7==1){
 	$total=$total+1;
-echo "7 ";
+echo "3 ";
 }
 
 echo "\n\n\n\n";
@@ -26,15 +26,15 @@ echo "<body class=\"page_bg\">";
 echo "<br>Total number of correct answers : ".$total."/3";
 echo '	<h2>Correct Answers</h2>
 <br>
-<b>Q5.</b>
+<b>Q1.</b>
                 <b>If a truss is in equilibrium, then each of its joints must also be in equilibrium.</b><br>
                 True<br>
                 <br>
-<b>Q6.</b>                
+<b>Q2.</b>                
                 <b>Truss members are all straight two-force members lying in the same plane. .</b><br>
                 True<br>
                 <br>
-<b>Q7.</b>                
+<b>Q3.</b>                
                 <b>The flexibility matrix method is used to analyze statically indeterminate planar trusses.</b><br>
                 True<br>
                 <br>
