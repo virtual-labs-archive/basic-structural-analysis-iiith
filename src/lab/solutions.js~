@@ -1,0 +1,10 @@
+function quiz_sol()
+{
+        var win = window.open("","win","width=500,height=500,scrollbars");
+	win.focus();
+	win.document.open();
+	win.document.write('<title>Solutions</title>');
+	win.document.write('<body bgcolor="#FFFFFF">');
+  	win.document.write('<center><h3>Answers</h3></center>');
+	win.document.write('<h3>Ans 1)</h3>Rigid frames, usually referred to simply as frames, are composed of straight members connected either by rigid (moment – resisting) connections or by hinged connections to form stable configuration.'+"\n"+"\n"+'<h3>Ans 2)</h3>The types of connection or joints are basically divided into two: stiff and pinned joint.'+"\n"+"\n"+'<h3>Ans 3)</h3>It is also called a pinned joint. These joints allow relative movement of the members and they cannot resist bending moments, unlike in stiff joints.As an example, many roof trusses and bridges are constructed using the pinned joint principles.');
+}
