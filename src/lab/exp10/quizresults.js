@@ -4,17 +4,17 @@ function check(){
 	var q3=document.quiz.q3.value;
 	var q4=document.quiz.q4.value;
 	var c=0;
-	if(q1=="1"){
+	if(q1==="1"){
 		c++;
 	}
-	if (q2=="2") {
+	if (q2==="2") {
 		c++;
 	}
-	if(q3=="3"){
+	if(q3==="3"){
 		c++;
 	}
-	if (q4=="4") {
+	if (q4==="4") {
 		c++;
 	}
-	window.alert("You got "+c+" correct!")
+	window.alert("You got "+c+" correct!");
 }
