@@ -5,20 +5,20 @@ function check(){
 	var Q4=document.quiz.q4.value;
 	var Q5=document.quiz.q5.value;
 	var c=0;
-	if(Q1=="1"){
+	if(Q1==="1"){
 		c++;
 	}
-	if (Q2=="0") {
+	if (Q2==="0") {
 		c++;
 	}
-	if (Q3=="1") {
+	if (Q3==="1") {
 		c++;
 	}
-	if (Q4=="1") {
+	if (Q4==="1") {
 		c++;
 	}
-	if (Q5=="0") {
+	if (Q5==="0") {
 		c++;
 	}
-	window.alert("You got "+c+" correct!")
+	window.alert("You got "+c+" correct!");
 }
