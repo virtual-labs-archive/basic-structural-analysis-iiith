@@ -40,7 +40,7 @@
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                    <span class="icon-bar" style="background-color: #77BB41"></span>
 			                </button>
-			                <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/index.html"><img src="../../../images/logo-new.png" class="img-responsive main-logo" /></a>
+			                <a class="navbar-brand main-logo-a" href="http://vlabs.ac.in/index.php"><img src="../../../images/logo-new.png" class="img-responsive main-logo" /></a>
 			            </div>			
 			                        
 			            <!-- Collect the nav links, forms, and other content for toggling -->
@@ -60,12 +60,12 @@
 			                        <a href="http://vlabs.ac.in/" class="menu-a" >HOME</a>
 			                    </li>
 			                    <li class="page-scroll menu-li menu-li-active">
-			                        <a href="http://vlabs.ac.in/"  class="menu-a menu-a-active" >ALL LABS</a>
+			                        <a href="http://vlabs.ac.in/search.php"  class="menu-a menu-a-active" >ALL LABS</a>
 			                    </li>
 			                    <li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/" class="menu-a" >PARTNERS</a>
+			                        <a href="http://vlabs.ac.in/#partner" class="menu-a" >PARTNERS</a>
 			                    </li><li class="page-scroll menu-li " >
-			                        <a href="http://vlabs.ac.in/" class="menu-a" >CONTACT</a>
+			                        <a href="http://vlabs.ac.in/#contact" class="menu-a" >CONTACT</a>
 			                    </li>
 			                </ul>
 			                
@@ -98,6 +98,7 @@
 						<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
+							<form action="trussquizresults.php" method="post" name="quiz" onsubmit='return window.confirm("You are submitting information to an external page. \nAre you sure?");' target="_blank">
 <h1 class="text-h2-lightblue">Trusses</h1><div class="content" id="experiment-article-section-6-content">
 <p>
 <b>Q1.</b> 
@@ -116,23 +117,25 @@
 <font color="red"> False </font> <br/><br/>
 <b>Q6.</b> 
               Truss members are all straight two-force members lying in the same plane.   <br>
-<input id="q5" name="q5" type="radio" value="1">
+<input id="q6" name="q6" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q6" name="q6" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
 <b>Q7.</b> 
               The flexibility matrix method is used to analyze statically indeterminate planar trusses. <br>
-<input id="q5" name="q5" type="radio" value="1">
+<input id="q7" name="q7" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q7" name="q7" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
 </input></br></input></br></input></br></input></br></input></br></input></br></p>
 <p>
+	<p> <input target="_blank" type="submit" value="Submit answers for evaluation"/></p>
 <a href="Exp-8 Trusses.pdf" target="_blank">Read More</a>
 </p>
 </div>						</div>
 					</div>
 			</div>
+		</form>
 			<!-- =================================================================================================================================== -->
 
 
@@ -179,13 +182,13 @@
 
 			<div class="col-md-2 border-right-green-dotted" >
 				<h2 class="text-h2-lightblue-small" style="font-weight: bold;margin-top: 0px;"> Follow us</h2>
-				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="../images/social/fb.png"  style="border-radius: 50%;"/> </a>
-				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="../images/social/twitter.png"  style="border-radius: 50%;"/></a>
-				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="../images/social/linkedin.png" style="border-radius: 50%;" /></a>
+				<a href="https://www.facebook.com/pages/Virtual-Labs-IIT-Delhi/301510159983871" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/fb.png"  style="border-radius: 50%;"/> </a>
+				<a href="https://twitter.com/TheVirtualLabs" class="text-a-lightgreen nounderline"   target="_blank"> <img src="images/social/twitter.png"  style="border-radius: 50%;"/></a>
+				<a href="http://linkedin.com" class="text-a-lightgreen nounderline"  target="_blank" > <img src="images/social/linkedin.png" style="border-radius: 50%;" /></a>
 				<a href="https://www.youtube.com/watch?v=mVBYNXLaDdg"
 				class="text-a-lightgreen nounderline"
 				target="_blank" >
-				<img src="../images/social/youtube.png"
+				<img src="images/social/youtube.png"
 				style="border-radius: 50%; width: 38px;
 				height: 38px" /></a>
 
