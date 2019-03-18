@@ -100,6 +100,7 @@
 							<!--edit -->
 <h1 class="text-h2-lightblue">Arches</h1><div class="content" id="experiment-article-section-6-content">
 <p>
+
 <b>Q1.</b> 
               What is a truss? <br/><br/>
 <b>Q2.</b> 
@@ -108,6 +109,27 @@
               Give some of the applications of trusses.  <br/><br/>
 <b>Q4.</b> 
               What are the types of trusses?  <br/><br/>
+
+</p>
+
+
+<script src="quizconfig.js">
+</script>
+
+<script>
+
+/***********************************************
+* JavaScriptKit.com Multiple Choice Quiz Script (http://www.javascriptkit.com)
+* Copyright 2003 JavaScript Kit- http://www.javascriptkit.com
+* This notice and footnote must stay intact for use
+* Visit JavaScript Kit (http://www.javascriptkit.com/) for full source code
+***********************************************/
+
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
+<!--
+<form method="POST" name="myquiz">
 <b>Q5.</b> 
               If a truss is in equilibrium, then each of its joints must also be in equilibrium.  <br>
 <input id="q5" name="q5" type="radio" value="1">
@@ -116,17 +138,56 @@
 <font color="red"> False </font> <br/><br/>
 <b>Q6.</b> 
               Truss members are all straight two-force members lying in the same plane.   <br>
-<input id="q5" name="q5" type="radio" value="1">
+<input id="q6" name="q6" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q6" name="q6" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
 <b>Q7.</b> 
               The flexibility matrix method is used to analyze statically indeterminate planar trusses. <br>
-<input id="q5" name="q5" type="radio" value="1">
+<input id="q7" name="q7" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q7" name="q7" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
-</input></br></input></br></input></br></input></br></input></br></input></br></p>
+</input></br></input></br></input></br></input></br></input></br></input></br>
+-->
+<form method="POST" name="myquiz">
+<div class="qheader">
+<b>Q5.</b> If a truss is in equilibrium, then each of its joints must also be in equilibrium. </div>
+<div class="qselections">
+<input type="radio" value="True" name="question1">True<br>
+<input type="radio" value="False" name="question1">False<br>
+
+
+</div>
+
+<br>
+<div class="qheader">
+<b>Q6.</b>Truss members are all straight two-force members lying in the same plane.</div>
+<div class="qselections">
+<input type="radio" value="True" name="question2">True<br>
+<input type="radio" value="False" name="question2">False<br>
+
+
+</div>
+
+<br>
+<div class="qheader">
+<b>Q7.</b> The flexibility matrix method is used to analyze statically indeterminate planar trusses.</div>
+<div class="qselections">
+<input type="radio" value="True" name="question3">True<br>
+<input type="radio" value="False" name="question3">False<br>
+
+
+</div>
+
+<br>
+</form>
+
+<form>
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
+
 <p>
 <a href="Exp-7 Arches.pdf" target="_blank">Read More</a>
 </p>
