@@ -100,6 +100,13 @@
 							<!--edit -->
 <h1 class="text-h2-lightblue">Plastic Hinge</h1><div class="content" id="experiment-article-section-6-content">
 <p>
+
+<script src="quizconfig.js">
+</script>
+<script>
+var actualchoices=new Array()
+document.cookie="ready=yes"
+</script>
 <b>Q1.</b> 
               What is a retaining wall? <br/><br/>
 <b>Q2.</b> 
@@ -114,13 +121,18 @@
               Discuss briefly Coulombs theory. <br/><br/>
 <b>Q7.</b> 
               Discuss briefly Coulombs theory. <br/><br/>
-<b>Q8.</b> 
-              Lateral earth pressure is the pressure that soil exerts in the horizontal plane. <br/>
-<input id="q4" name="q4" type="radio" value="1">
-<font color="green"> True </font> <br>
-<input id="q4" name="q4" type="radio" value="0">
-<font color="red"> False </font> <br/><br/>
-</input></br></input></p>
+
+<form method="POST" name="myquiz">
+<div class="qheader">
+<b>Q8.</b>Lateral earth pressure is the pressure that soil exerts in the horizontal plane.</div>
+<div class="qselections">
+<input type="radio" value="True" name="question1"> True<br>
+<input type="radio" value="False" name="question1"> False<br>
+</div>
+</form>
+<div align="center">
+<input type="button" value="Grade Me!" name="B1" onClick="gradeit()"> <input type="button" value="Reset" name="B2" onClick="document.myquiz.reset()"></div>
+</form>
 <p>
 <a href="Exp-10 Plastic hinge.pdf" target="_blank">Read More</a>
 </p>
