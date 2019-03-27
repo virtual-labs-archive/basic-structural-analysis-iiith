@@ -101,35 +101,47 @@
 <h1 class="text-h2-lightblue">Arches</h1><div class="content" id="experiment-article-section-6-content">
 <p>
 <b>Q1.</b> 
-              What is a truss? <br/><br/>
+              What is a truss? 
+              <br>
+              <textarea rows="5" cols="60" id="Q1"></textarea>
+              <br><br>
 <b>Q2.</b> 
-              What are the methods to analyze a truss member?  <br/><br/>
+              What are the methods to analyze a truss member?  
+              <br>
+              <textarea rows="5" cols="60" id="Q1"></textarea>
+              <br><br>
 <b>Q3.</b> 
-              Give some of the applications of trusses.  <br/><br/>
+              Give some of the applications of trusses.  
+              <br>
+              <textarea rows="5" cols="60" id="Q1"></textarea>
+              <br><br>
 <b>Q4.</b> 
-              What are the types of trusses?  <br/><br/>
+              What are the types of trusses?  
+              <br>
+              <textarea rows="5" cols="60" id="Q1"></textarea>
+              <br><br>
 <b>Q5.</b> 
-              If a truss is in equilibrium, then each of its joints must also be in equilibrium.  <br>
-<input id="q5" name="q5" type="radio" value="1">
+ <span id="Q5"> If a truss is in equilibrium, then each of its joints must also be in equilibrium. </span> <br>
+<input id="q5t" name="q5" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q5f" name="q5" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
 <b>Q6.</b> 
-              Truss members are all straight two-force members lying in the same plane.   <br>
-<input id="q5" name="q5" type="radio" value="1">
+<span id="Q6"> Truss members are all straight two-force members lying in the same plane. </span> <br>
+<input id="q6t" name="q6" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q6f" name="q6" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
 <b>Q7.</b> 
-              The flexibility matrix method is used to analyze statically indeterminate planar trusses. <br>
-<input id="q5" name="q5" type="radio" value="1">
+ <span id="Q7"> The flexibility matrix method is used to analyze statically indeterminate planar trusses. </span><br>
+<input id="q7t" name="q7" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q5" name="q5" type="radio" value="0">
+<input id="q7f" name="q7" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
+<button id="quiz-result" type="button">
+     Submit
+</button>
 </input></br></input></br></input></br></input></br></input></br></input></br></p>
-<p>
-<a href="Exp-7 Arches.pdf" target="_blank">Read More</a>
-</p>
 </div>						</div>
 					</div>
 			</div>
@@ -200,16 +212,47 @@
 
 
 	<!-- jQuery -->
-    <script src="../../js/jquery.js"></script>
+    <script src="../../../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../../js/bootstrap.min.js"></script>
 
 	<!-- Custom Theme JavaScript -->
-    <script src="../../js/custom.js"></script>
+    <script src="../../../js/custom.js"></script>
     
     <!-- Include js plugin -->
 	<script src="../../vendors/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript">
+		c=0;
+		$('#quiz-result').click(
+		    function(){
+		        if($("#q5t").is(':checked')) {
+		            $('#Q5').css("background-color", "green");
+		            c+=1;
+		        }
+		        if($("#q5f").is(':checked')){
+		            $('#Q5').css("background-color", "red");
+		        }
+		        if($("#q6t").is(':checked')) {
+		            $('#Q6').css("background-color", "green");
+		            c+=1;
+		        }
+		        if($("#q6f").is(':checked')){
+		            $('#Q6').css("background-color", "red");
+		        }
+		        if($("#q7f").is(':checked')) {
+		            $('#Q7').css("background-color", "green");
+		            c+=1;
+		        }
+		        if($("#q7t").is(':checked')){
+		            $('#Q7').css("background-color", "red");
+		        }
+
+		        alert("Subjective answers coming soon. You scored "+c+"/5. Congrats!");
+		        c=0;
+		    }
+		);
+	</script>
 	
 	<script type="text/javascript">
 	$(document).ready(function() {
