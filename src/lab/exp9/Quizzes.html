@@ -115,11 +115,15 @@
 <b>Q7.</b> 
               Discuss briefly Coulombs theory. <br/><br/>
 <b>Q8.</b> 
-              Lateral earth pressure is the pressure that soil exerts in the horizontal plane. <br/>
-<input id="q4" name="q4" type="radio" value="1">
+<span id="Q8"> Lateral earth pressure is the pressure that soil exerts in the horizontal plane.</span> <br/>
+<input id="q8t" name="q8" type="radio" value="1">
 <font color="green"> True </font> <br>
-<input id="q4" name="q4" type="radio" value="0">
+<input id="q8f" name="q8" type="radio" value="0">
 <font color="red"> False </font> <br/><br/>
+<button id="quiz-result" type="button">
+     Submit
+</button>
+
 </input></br></input></p>
 <p>
 <a href="Exp-9 Retaining walls.pdf" target="_blank">Read More</a>
@@ -194,16 +198,33 @@
 
 
 	<!-- jQuery -->
-    <script src="../../js/jquery.js"></script>
+    <script src="../../../js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../../js/bootstrap.min.js"></script>
 
 	<!-- Custom Theme JavaScript -->
-    <script src="../../js/custom.js"></script>
+    <script src="../../../js/custom.js"></script>
     
     <!-- Include js plugin -->
 	<script src="../../vendors/owl-carousel/owl.carousel.js"></script>
+	<script type="text/javascript">
+		c=0;
+		$('#quiz-result').click(
+		    function(){
+		        if($("#q8t").is(':checked')) {
+		            $('#Q8').css("background-color", "green");
+		            c+=1;
+		        }
+		        if($("#q8f").is(':checked')){
+		            $('#Q8').css("background-color", "red");
+		        }
+		        
+		        alert("Subjective answers coming soon. You scored "+c+"/1. Congrats!");
+		        c=0;
+		    }
+		);
+	</script>
 	
 	<script type="text/javascript">
 	$(document).ready(function() {
