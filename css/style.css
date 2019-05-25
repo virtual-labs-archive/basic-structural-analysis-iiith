@@ -16,6 +16,11 @@ p {
     font-size: 16px;
 }
 
+/* Making the introduction to experiments italic */
+p.italic {
+	font-style: italic;
+}
+
 /*** Calendar **********************/
 .content .container-fluid div.calender  { position: relative; }
 
